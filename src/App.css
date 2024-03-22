@@ -34,7 +34,7 @@ a:hover {
 p {
   color:var(--sliver);
   font-size:15px;
-  line-height:30;
+  line-height:30px;
   margin:20px 0;
 }
 h1,
@@ -67,6 +67,10 @@ button {
   cursor: pointer;
 
 }
+.primaryBtn{
+  background: none;
+  border: 2px solid var(--primaryColor);
+}
 
 header{ 
   background-color: var(--headingColor);
@@ -94,7 +98,7 @@ header a {
   header a {
     width: 100%;
     display: block;
-    color: var(white);
+    color: var(--white);
   }
   .toggle{
     display: block;
@@ -111,3 +115,42 @@ header a {
   }
 
 }
+/*----------header-----*/
+section{
+  height:90vh;
+  display: flex;
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+/*----------hero-----*/
+.Hero {
+  position: relative;
+}
+
+.Hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../public/images/home-bkg.png");
+  background-size: cover;
+  background-attachment: fixed; 
+  z-index: -1;
+  width: 100%;
+  height: 90vh;
+}
+.HeroContainer{
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.Hero h1{
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+
+/*----------header-----*/
