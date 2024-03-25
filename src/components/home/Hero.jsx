@@ -5,9 +5,9 @@ import TypeWriter from 'typewriter-effect';
 export const Hero = () => {
   return (
     <>
-    <section className='Hero'>
+    <section className='hero'>
       {home.map((val,i) => (
-        <div className='HeroContainer'>
+        <div className='heroContainer'>
           <h3>{val.text}</h3>
           <h1>
             <TypeWriter options={{ strings: [`${val.name}`, `${val.post}`, `${val.design}`],
